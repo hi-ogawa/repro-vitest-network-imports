@@ -1,7 +1,8 @@
-import { test } from "vitest";
+import { test, expect } from "vitest";
+
 // @ts-ignore
 import React from "https://esm.sh/react@18.2.0";
 
 test("react", async () => {
-  console.log(React.version);
+  expect(React.version).toBe("18.2.0")
 });
